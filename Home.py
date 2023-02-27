@@ -20,7 +20,7 @@ st.set_page_config(
 
 image = Image.open('images/logo.png')
 
-st.image(image, caption='logo')
+st.image(image)
 # Title
 st.title("Análisis de Google reviews: panaderías Lecaroz")
 
@@ -31,4 +31,5 @@ Los datos fueron escrapeados de Google Maps a través de una API.
 
 #st.dataframe(df)
 
+st.plotly_graph()
 

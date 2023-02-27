@@ -10,16 +10,7 @@ import viz
 import plotly.express as px
 from streamlit_folium import st_folium
 import folium
-import os
-# get the current working directory
-cwd = os.getcwd()
 
-# # create the path to the file
-# file_path = os.path.join(cwd, 'data', 'lec_sent.csv')
-
-# # open the file
-# with open(file_path, 'r') as f:
-#     df = f.read()
 
 
 df = pd.read_csv("data/lec_sent.csv")

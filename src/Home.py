@@ -18,9 +18,9 @@ st.set_page_config(
 
 
 
-image = Image.open('../images/logo.png')
+# image = Image.open('../images/logo.png')
 
-st.image(image, caption='logo')
+# st.image(image, caption='logo')
 # Title
 st.title("Análisis de Google reviews: panaderias Lecaroz")
 

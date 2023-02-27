@@ -8,7 +8,8 @@ import viz
 import plotly.express as px
 
 
-df = pd.read_csv("../data/lekaroz.csv")
+df = pd.read_csv("data/lekaroz.csv")
+
 
 st.set_page_config(
      page_title="Lecaroz 🥐",

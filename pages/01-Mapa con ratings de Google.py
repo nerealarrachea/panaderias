@@ -22,7 +22,7 @@ cwd = os.getcwd()
 #     df = f.read()
 
 
-df = pd.read_csv("/Users/narea/Desktop/panaderias/data/lec_sent.csv")
+df = pd.read_csv("data/lec_sent.csv")
 
 
 st.set_page_config(

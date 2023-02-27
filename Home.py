@@ -4,7 +4,6 @@ from datetime import date
 import pandas as pd
 import pickle
 from PIL import Image
-import src.viz 
 import plotly.express as px
 
 

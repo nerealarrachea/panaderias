@@ -8,7 +8,7 @@ import viz
 import plotly.express as px
 
 
-df = pd.read_csv("/Users/narea/Desktop/Lekaroz/data/lekaroz.csv")
+df = pd.read_csv("../data/lekaroz.csv")
 
 st.set_page_config(
      page_title="Lecaroz 🥐",
@@ -28,6 +28,6 @@ st.markdown('''
 Los datos fueron escrapeados de Google Maps a través de una API. 
 ''')
 
-st.dataframe(df)
+#st.dataframe(df)
 
 

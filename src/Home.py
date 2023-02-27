@@ -8,11 +8,11 @@ import viz
 import plotly.express as px
 
 
-df = pd.read_csv("../data/lekaroz.csv")
+#df = pd.read_csv("../data/lekaroz.csv")
 
 
 st.set_page_config(
-     page_title="Lecaroz 🥐",
+     page_title="Lecaroz",
      layout="wide"
 )
 
@@ -22,7 +22,7 @@ image = Image.open('../images/logo.png')
 
 st.image(image, caption='logo')
 # Title
-st.title("Análisis de Google reviews: panaderías Lecaroz")
+st.title("Análisis de Google reviews: panaderias Lecaroz")
 
 st.subheader("Datos")
 st.markdown('''

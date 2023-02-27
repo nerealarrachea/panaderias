@@ -4,11 +4,11 @@ from datetime import date
 import pandas as pd
 import pickle
 from PIL import Image
-import viz 
+import src.viz 
 import plotly.express as px
 
 
-#df = pd.read_csv("../data/lekaroz.csv")
+df = pd.read_csv("data/lekaroz.csv")
 
 
 st.set_page_config(
@@ -18,11 +18,11 @@ st.set_page_config(
 
 
 
-# image = Image.open('../images/logo.png')
+image = Image.open('images/logo.png')
 
-# st.image(image, caption='logo')
+st.image(image, caption='logo')
 # Title
-st.title("Análisis de Google reviews: panaderias Lecaroz")
+st.title("Análisis de Google reviews: panaderías Lecaroz")
 
 st.subheader("Datos")
 st.markdown('''

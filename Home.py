@@ -30,5 +30,5 @@ Los datos fueron escrapeados de Google Maps a través de una API.
 
 #st.dataframe(df)
 
-st.plotly_graph()
+#st.plotly_graph()
 

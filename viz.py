@@ -3,6 +3,11 @@ import pandas as pd
 import folium
 import plotly.express as px
 import types
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud, STOPWORDS
+import nltk
+from nltk.corpus import stopwords
+nltk.download('stopwords')
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -56,3 +61,26 @@ def pie(df2):
     fig.update_layout(title='Porcentaje de accesibilidad')
 
     return fig
+
+def wordc(df):
+    nltk.download('stopwords')
+    # Load Spanish stopwords
+    spanish_stopwords = set(stopwords.words('spanish'))
+
+    # Add additional custom stopwords
+    custom_stopwords = {"los", "las", "el", "la", "de", "en", "y", "si", "pan"}
+
+    # Combine all stopwords
+    stop = STOPWORDS.union(spanish_stopwords, custom_stopwords)
+
+    wordcloud = WordCloud(width = 800, height = 800, 
+                background_color ='white', 
+                stopwords = stop, 
+                min_font_size = 10).generate(' '.join(df['rev_es_0']))
+
+    # plot wordcloud
+    plt.figure(figsize = (8, 8), facecolor = None) 
+    plt.imshow(wordcloud) 
+    plt.axis("off") 
+    plt.tight_layout(pad = 0) 
+    return plt

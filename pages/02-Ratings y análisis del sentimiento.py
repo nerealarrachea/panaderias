@@ -7,7 +7,7 @@ import viz
 import plotly.express as px 
 
 st.set_page_config(
-     page_title="HDI and Gender",
+     page_title="Sentimiento",
      page_icon="🚀",
      layout="wide",
 )

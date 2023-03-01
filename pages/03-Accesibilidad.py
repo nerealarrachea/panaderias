@@ -9,7 +9,7 @@ import plotly.express as px
 # st.video('https://youtu.be/FVsvrFAWDTM') 
 
 st.set_page_config(
-     page_title="Human rights",
+     page_title="Accesibilidad",
      page_icon="🚀",
      layout="wide",
 )
